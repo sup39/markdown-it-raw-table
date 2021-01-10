@@ -1,4 +1,19 @@
 # markdown-it-raw-table
+
+## Usage
+```js
+const md = require('markdown-it')();
+const mrt = require('@sup39/markdown-it-raw-table');
+md.use(mrt);
+
+md.render(`
+| abc | def |
+| --- | --- |
+| bar |
+| bar | baz | boo |
+`);
+```
+
 ## Feature
 `td` count is NOT adjusted to `th` count when using this plugin.
 
@@ -228,18 +243,4 @@ is rendered as
     </tr>
   </tbody>
 </table>
-```
-
-## Usage
-```js
-const md = require('markdown-it')();
-const mrt = require('@sup39/markdown-it-raw-table');
-md.use(mrt);
-
-md.parse(`
-| abc | def |
-| --- | --- |
-| bar |
-| bar | baz | boo |
-`);
 ```
