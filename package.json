@@ -1,0 +1,24 @@
+{
+  "name": "@sup39/markdown-it-raw-table",
+  "version": "1.0.0",
+  "description": "Plugin for Markdown-it to use non-GFM table.",
+  "keywords": [
+    "markdown",
+    "markdown-it",
+    "markdown-it-plugin",
+    "table"
+  ],
+  "repository": "sup39/markdown-it-raw-table",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "eslint": "^7.17.0",
+    "eslint-config-google": "^0.14.0",
+    "markdown-it": "^12.0.4",
+    "mocha": "^8.2.1"
+  }
+}
